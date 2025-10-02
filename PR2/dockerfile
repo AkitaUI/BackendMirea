@@ -1,0 +1,20 @@
+# Базовый образ для сборки PHP приложений
+FROM php:7.4-apache AS base
+WORKDIR /var/www/html
+
+# Drawer
+FROM base AS Drawer_service
+WORKDIR /var/www/html
+COPY Drawer_service/ /var/www/html/
+EXPOSE 80
+
+# Sorter
+FROM base AS sorter_service
+WORKDIR /var/www/html
+COPY Sorter_service/ /var/www/html/
+EXPOSE 80
+
+# AdminPanel
+FROM base AS adminpanel_service
+COPY AdminPanel_service/ /var/www/html/
+EXPOSE 80

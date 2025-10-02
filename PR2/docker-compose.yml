@@ -1,0 +1,33 @@
+services:
+  drawer_service:
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: drawer_service
+    container_name: drawer_service
+    ports:
+      - "8000:80"
+    volumes:
+      - ./Drawer_service:/var/www/html
+
+  sorter_service:
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: sorter_service
+    container_name: sorter_service
+    ports:
+      - "8001:80"
+    volumes:
+      - ./Sorter_service:/var/www/html
+
+  adminpanel_service:
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: adminpanel_service
+    container_name: adminpanel_service
+    ports:
+      - "8002:80"
+    volumes:
+      - ./AdminPanel_service:/var/www/html
