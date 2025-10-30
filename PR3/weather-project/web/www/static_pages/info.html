@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Информация о погодном приложении</title>
+  <link rel="stylesheet" href="/static/assets/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header, footer {
+      background-color: #0078D7;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    main {
+      margin-top: 20px;
+    }
+    a {
+      color: #0078D7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>О нашем погодном приложении</h1>
+  </header>
+
+  <main>
+    <p>
+      Это тестовое веб-приложение создано для демонстрации работы связки 
+      <strong>nginx + apache + php + MySQL</strong>.
+    </p>
+    <p>
+      <strong>nginx</strong> обслуживает статический контент (страницы вроде этой),  
+      а <strong>Apache + PHP</strong> — динамический (данные из базы, прогнозы и т.д.).
+    </p>
+    <p>
+      В качестве примера динамического контента вы можете перейти на:
+      <a href="/dynamic/index.php">страницу списка городов</a>.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 WeatherApp — демо-проект для учебных целей.
+  </footer>
+</body>
+</html>
