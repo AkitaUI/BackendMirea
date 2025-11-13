@@ -1,0 +1,64 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:7.0
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    networks:
+      - webnet
+
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: weatherdb
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - webnet
+
+  web:
+    build: ./web
+    depends_on:
+      - db
+      - redis
+    environment:
+      DB_HOST: db
+      DB_NAME: weatherdb
+      DB_USER: appuser
+      DB_PASS: apppass
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    volumes:
+      - ./web/www:/var/www/weather_site   # код приложения
+      - ./uploads:/var/www/uploads
+    networks:
+      - webnet
+    expose:
+      - "80"
+
+  nginx:
+    image: nginx:stable
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx_static:/srv/www_static:ro       # нестандартная root для nginx
+    networks:
+      - webnet
+
+volumes:
+  db_data:
+  redis_data:
+  uploads:
+
+networks:
+  webnet:
+    driver: bridge
