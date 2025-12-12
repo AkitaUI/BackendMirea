@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "name": "Любовь Сергеевна Андреева",
+        "age": 53,
+        "salary": 69745,
+        "department": "HR",
+        "score": 50,
+        "hired_at": "2007-10-04"
+    },
+    {
+        "id": 2,
+        "name": "Люся Александровна Киселёва",
+        "age": 20,
+        "salary": 74671,
+        "department": "Sales",
+        "score": 54,
+        "hired_at": "2015-06-12"
+    },
+    {
+        "id": 3,
+        "name": "Кошелев Игнатий Иванович",
+        "age": 38,
+        "salary": 62533,
+        "department": "Sales",
+        "score": 17,
+        "hired_at": "2020-05-25"
+    },
+    {
+        "id": 4,
+        "name": "Эльвира Андреевна Колобова",
+        "age": 38,
+        "salary": 146215,
+        "department": "Support",
+        "score": 36,
+        "hired_at": "1978-07-15"
+    },
+    {
+        "id": 5,
+        "name": "Борис Александрович Комиссаров",
+        "age": 38,
+        "salary": 87772,
+        "department": "HR",
+        "score": 79,
+        "hired_at": "1980-08-06"
+    },
+    {
+        "id": 6,
+        "name": "Князева Ульяна Львовна",
+        "age": 57,
+        "salary": 87237,
+        "department": "Marketing",
+        "score": 75,
+        "hired_at": "2017-11-03"
+    },
+    {
+        "id": 7,
+        "name": "Орлов Филипп Андреевич",
+        "age": 46,
+        "salary": 147978,
+        "department": "Marketing",
+        "score": 18,
+        "hired_at": "1976-05-05"
+    },
+    {
+        "id": 8,
+        "name": "Мария Владимировна Новикова",
+        "age": 61,
+        "salary": 105241,
+        "department": "Sales",
+        "score": 61,
+        "hired_at": "2025-11-18"
+    },
+    {
+        "id": 9,
+        "name": "Игнат Сергеевич Меркушев",
+        "age": 29,
+        "salary": 141596,
+        "department": "HR",
+        "score": 83,
+        "hired_at": "2001-03-03"
+    },
+    {
+        "id": 10,
+        "name": "Григорьев Глеб Алексеевич",
+        "age": 57,
+        "salary": 36053,
+        "department": "Sales",
+        "score": 52,
+        "hired_at": "1996-02-01"
+    },
+    {
+        "id": 11,
+        "name": "Алина Евгеньевна Пестова",
+        "age": 54,
+        "salary": 44684,
+        "department": "IT",
+        "score": 74,
+        "hired_at": "1970-01-15"
+    },
+    {
+        "id": 12,
+        "name": "Галина Ивановна Нестерова",
+        "age": 48,
+        "salary": 41736,
+        "department": "HR",
+        "score": 14,
+        "hired_at": "1973-08-23"
+    },
+    {
+        "id": 13,
+        "name": "Артём Алексеевич Рожков",
+        "age": 22,
+        "salary": 108418,
+        "department": "IT",
+        "score": 69,
+        "hired_at": "1984-09-13"
+    },
+    {
+        "id": 14,
+        "name": "Виктор Дмитриевич Медведев",
+        "age": 22,
+        "salary": 136074,
+        "department": "Sales",
+        "score": 24,
+        "hired_at": "2019-03-21"
+    },
+    {
+        "id": 15,
+        "name": "Носкова Екатерина Львовна",
+        "age": 61,
+        "salary": 104892,
+        "department": "IT",
+        "score": 42,
+        "hired_at": "1976-11-17"
+    },
+    {
+        "id": 16,
+        "name": "Тарас Андреевич Казаков",
+        "age": 58,
+        "salary": 43039,
+        "department": "HR",
+        "score": 58,
+        "hired_at": "2000-05-20"
+    },
+    {
+        "id": 17,
+        "name": "Рада Львовна Лаврентьева",
+        "age": 31,
+        "salary": 143536,
+        "department": "Sales",
+        "score": 45,
+        "hired_at": "1987-04-10"
+    },
+    {
+        "id": 18,
+        "name": "Мухина Раиса Сергеевна",
+        "age": 21,
+        "salary": 128795,
+        "department": "HR",
+        "score": 73,
+        "hired_at": "2004-01-14"
+    },
+    {
+        "id": 19,
+        "name": "София Александровна Муравьёва",
+        "age": 49,
+        "salary": 120172,
+        "department": "IT",
+        "score": 87,
+        "hired_at": "1981-05-09"
+    },
+    {
+        "id": 20,
+        "name": "Яков Андреевич Харитонов",
+        "age": 55,
+        "salary": 47210,
+        "department": "Sales",
+        "score": 91,
+        "hired_at": "1979-05-13"
+    },
+    {
+        "id": 21,
+        "name": "Полякова Владлена Дмитриевна",
+        "age": 47,
+        "salary": 127028,
+        "department": "Sales",
+        "score": 15,
+        "hired_at": "1979-10-12"
+    },
+    {
+        "id": 22,
+        "name": "Шестаков Владлен Дмитриевич",
+        "age": 37,
+        "salary": 87306,
+        "department": "Support",
+        "score": 23,
+        "hired_at": "2017-04-05"
+    },
+    {
+        "id": 23,
+        "name": "Кулагина Алла Максимовна",
+        "age": 27,
+        "salary": 125679,
+        "department": "IT",
+        "score": 98,
+        "hired_at": "2022-06-06"
+    },
+    {
+        "id": 24,
+        "name": "Щербаков Гавриил Романович",
+        "age": 59,
+        "salary": 122014,
+        "department": "Support",
+        "score": 8,
+        "hired_at": "2002-12-11"
+    },
+    {
+        "id": 25,
+        "name": "Яковлев Илларион Евгеньевич",
+        "age": 51,
+        "salary": 148734,
+        "department": "IT",
+        "score": 19,
+        "hired_at": "1974-01-25"
+    },
+    {
+        "id": 26,
+        "name": "Татьяна Максимовна Бирюкова",
+        "age": 36,
+        "salary": 78511,
+        "department": "Marketing",
+        "score": 8,
+        "hired_at": "1986-12-21"
+    },
+    {
+        "id": 27,
+        "name": "Сидоров Давид Дмитриевич",
+        "age": 21,
+        "salary": 55240,
+        "department": "Sales",
+        "score": 29,
+        "hired_at": "2023-04-30"
+    },
+    {
+        "id": 28,
+        "name": "Владлена Дмитриевна Вишнякова",
+        "age": 29,
+        "salary": 70508,
+        "department": "Marketing",
+        "score": 28,
+        "hired_at": "1989-07-10"
+    },
+    {
+        "id": 29,
+        "name": "Инна Львовна Гришина",
+        "age": 34,
+        "salary": 96060,
+        "department": "IT",
+        "score": 68,
+        "hired_at": "1971-12-09"
+    },
+    {
+        "id": 30,
+        "name": "Ульяна Ивановна Мельникова",
+        "age": 29,
+        "salary": 94258,
+        "department": "Marketing",
+        "score": 4,
+        "hired_at": "2010-04-30"
+    },
+    {
+        "id": 31,
+        "name": "Веселов Аким Евгеньевич",
+        "age": 57,
+        "salary": 67180,
+        "department": "Marketing",
+        "score": 14,
+        "hired_at": "1994-12-02"
+    },
+    {
+        "id": 32,
+        "name": "Василий Иванович Одинцов",
+        "age": 40,
+        "salary": 92838,
+        "department": "Sales",
+        "score": 35,
+        "hired_at": "2004-06-30"
+    },
+    {
+        "id": 33,
+        "name": "Василий Дмитриевич Воронцов",
+        "age": 65,
+        "salary": 123472,
+        "department": "Support",
+        "score": 1,
+        "hired_at": "2009-09-18"
+    },
+    {
+        "id": 34,
+        "name": "Савин Евгений Андреевич",
+        "age": 51,
+        "salary": 53507,
+        "department": "Sales",
+        "score": 15,
+        "hired_at": "1995-06-23"
+    },
+    {
+        "id": 35,
+        "name": "Герасим Львович Терентьев",
+        "age": 61,
+        "salary": 98588,
+        "department": "IT",
+        "score": 84,
+        "hired_at": "2007-08-15"
+    },
+    {
+        "id": 36,
+        "name": "Кулагина Виктория Алексеевна",
+        "age": 24,
+        "salary": 112948,
+        "department": "HR",
+        "score": 66,
+        "hired_at": "2019-06-18"
+    },
+    {
+        "id": 37,
+        "name": "Бобылёв Бронислав Иванович",
+        "age": 32,
+        "salary": 33135,
+        "department": "Marketing",
+        "score": 48,
+        "hired_at": "2011-10-31"
+    },
+    {
+        "id": 38,
+        "name": "Клара Борисовна Баранова",
+        "age": 32,
+        "salary": 81129,
+        "department": "Support",
+        "score": 48,
+        "hired_at": "2011-11-14"
+    },
+    {
+        "id": 39,
+        "name": "Шестаков Давид Александрович",
+        "age": 60,
+        "salary": 89840,
+        "department": "Support",
+        "score": 81,
+        "hired_at": "1999-04-27"
+    },
+    {
+        "id": 40,
+        "name": "Полякова Алина Ивановна",
+        "age": 30,
+        "salary": 57461,
+        "department": "Sales",
+        "score": 64,
+        "hired_at": "2013-08-04"
+    },
+    {
+        "id": 41,
+        "name": "Мария Львовна Антонова",
+        "age": 26,
+        "salary": 123062,
+        "department": "Support",
+        "score": 46,
+        "hired_at": "2007-07-07"
+    },
+    {
+        "id": 42,
+        "name": "Дан Дмитриевич Юдин",
+        "age": 19,
+        "salary": 84333,
+        "department": "IT",
+        "score": 65,
+        "hired_at": "2025-07-06"
+    },
+    {
+        "id": 43,
+        "name": "Носова Людмила Борисовна",
+        "age": 51,
+        "salary": 129839,
+        "department": "Marketing",
+        "score": 7,
+        "hired_at": "1999-03-03"
+    },
+    {
+        "id": 44,
+        "name": "София Максимовна Филиппова",
+        "age": 28,
+        "salary": 120147,
+        "department": "IT",
+        "score": 76,
+        "hired_at": "1992-05-14"
+    },
+    {
+        "id": 45,
+        "name": "Адам Дмитриевич Кузнецов",
+        "age": 46,
+        "salary": 120761,
+        "department": "IT",
+        "score": 92,
+        "hired_at": "2004-06-28"
+    },
+    {
+        "id": 46,
+        "name": "Ермаков Пётр Максимович",
+        "age": 33,
+        "salary": 143965,
+        "department": "HR",
+        "score": 30,
+        "hired_at": "1990-07-05"
+    },
+    {
+        "id": 47,
+        "name": "Горшков Вениамин Фёдорович",
+        "age": 49,
+        "salary": 132482,
+        "department": "IT",
+        "score": 85,
+        "hired_at": "2017-03-07"
+    },
+    {
+        "id": 48,
+        "name": "Виктория Борисовна Игнатова",
+        "age": 44,
+        "salary": 110682,
+        "department": "IT",
+        "score": 15,
+        "hired_at": "1990-05-15"
+    },
+    {
+        "id": 49,
+        "name": "Князева Ульяна Дмитриевна",
+        "age": 23,
+        "salary": 103496,
+        "department": "Sales",
+        "score": 60,
+        "hired_at": "2001-12-15"
+    },
+    {
+        "id": 50,
+        "name": "Тимофеева Екатерина Александровна",
+        "age": 18,
+        "salary": 46936,
+        "department": "IT",
+        "score": 1,
+        "hired_at": "1989-07-22"
+    }
+]
