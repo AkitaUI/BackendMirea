@@ -1,1 +1,18 @@
+version: "3.8"
 
+services:
+  web:
+    build: ./web
+    container_name: php-redis-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/src:/var/www/html
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: php-redis-session
+    ports:
+      - "6379:6379"
