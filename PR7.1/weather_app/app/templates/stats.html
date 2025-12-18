@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Статистика</h1>
+
+<form method="post" action="/stats/rebuild">
+  <button type="submit">Сгенерировать фикстуры и обновить графики</button>
+</form>
+
+<div style="display:grid; gap:16px; margin-top:16px;">
+  <div>
+    <h3>Линейный график</h3>
+    <img src="/static/{{ files.line }}" style="max-width:100%; border:1px solid #ccc;">
+  </div>
+  <div>
+    <h3>Bar-график</h3>
+    <img src="/static/{{ files.bar }}" style="max-width:100%; border:1px solid #ccc;">
+  </div>
+  <div>
+    <h3>Pie-график</h3>
+    <img src="/static/{{ files.pie }}" style="max-width:100%; border:1px solid #ccc;">
+  </div>
+</div>
+{% endblock %}

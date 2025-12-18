@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>PDF файлы</h1>
+
+<form method="post" action="/pdf/upload" enctype="multipart/form-data">
+  <input type="file" name="file" accept="application/pdf" />
+  <input type="text" name="note" placeholder="Заметка (опц.)" />
+  <button type="submit">Загрузить</button>
+</form>
+
+<ul>
+  {% for f in files %}
+    <li>
+      {{ f.original_name }} ({{ f.uploaded_at }})
+      — <a href="/pdf/{{ f.id }}/download">скачать</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

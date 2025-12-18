@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Личный кабинет</h1>
+<p>Пользователь: <b>{{ current_user.username }}</b></p>
+
+<h2>Настройки контента</h2>
+<form method="post" action="/prefs/update">
+  <label>Тема:
+    <select name="theme">
+      <option value="light" {% if prefs.theme=='light' %}selected{% endif %}>light</option>
+      <option value="dark" {% if prefs.theme=='dark' %}selected{% endif %}>dark</option>
+      <option value="colorblind" {% if prefs.theme=='colorblind' %}selected{% endif %}>colorblind</option>
+    </select>
+  </label>
+  <label>Язык:
+    <select name="lang">
+      <option value="ru" {% if prefs.lang=='ru' %}selected{% endif %}>ru</option>
+      <option value="en" {% if prefs.lang=='en' %}selected{% endif %}>en</option>
+    </select>
+  </label>
+  <label>Город:
+    <input name="home_city" value="{{ prefs.home_city }}">
+  </label>
+  <button type="submit">Сохранить</button>
+</form>
+{% endblock %}

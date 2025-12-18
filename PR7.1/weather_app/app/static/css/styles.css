@@ -1,0 +1,13 @@
+body { font-family: sans-serif; margin: 0; }
+nav { padding: 12px; border-bottom: 1px solid #ddd; display:flex; gap:12px; align-items:center; }
+main { padding: 16px; }
+.flash { list-style: none; padding: 0; }
+.flash li { margin: 8px 0; }
+
+body.theme-dark { background:#111; color:#eee; }
+body.theme-dark nav { border-color:#333; }
+
+body.theme-colorblind { background:#fff; color:#111; }
+body.theme-colorblind a, body.theme-colorblind button { outline: 2px solid #000; }
+table { border-collapse: collapse; width:100%; margin-top:12px; }
+td, th { border: 1px solid #ccc; padding: 8px; }
