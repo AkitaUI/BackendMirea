@@ -1,0 +1,6 @@
+from __future__ import annotations
+from typing import Protocol, BinaryIO
+
+class PdfStorage(Protocol):
+    def save_pdf(self, stream: BinaryIO, original_name: str) -> str: ...
+    def get_pdf_path(self, stored_name: str) -> str: ...

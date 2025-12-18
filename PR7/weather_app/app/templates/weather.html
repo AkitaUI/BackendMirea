@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Погода: {{ city }}</h1>
+
+<form method="get" action="/weather" style="display:flex; gap:8px; flex-wrap:wrap;">
+  <input name="city" value="{{ city }}" placeholder="City">
+  <input name="date" value="{{ date or '' }}" placeholder="YYYY-MM-DD (опц.)">
+  <button type="submit">Фильтр</button>
+</form>
+
+<hr>
+
+<form method="post" action="/weather/fetch" style="display:grid; gap:8px; max-width:720px;">
+  <div>
+    <label>Город (для wttr):</label>
+    <input name="city" value="{{ city }}">
+  </div>
+  <div>
+    <label>timeanddate slug (например russia/moscow):</label>
+    <input name="timeanddate_slug" value="russia/moscow">
+  </div>
+  <div>
+    <label>meteofor URL (10 days):</label>
+    <input name="meteofor_url" value="https://meteofor.com/weather-moscow-4368/10-days/">
+  </div>
+  <button type="submit">Обновить (спарсить + сохранить + агрегировать)</button>
+</form>
+
+<h2>Агрегированный прогноз</h2>
+<table>
+  <tr><th>Дата</th><th>Temp avg</th><th>Condition (mode)</th><th>Sources</th></tr>
+  {% for a in agg_rows %}
+    <tr>
+      <td>{{ a.date }}</td>
+      <td>{{ "%.1f"|format(a.temp_avg) if a.temp_avg is not none else "" }}</td>
+      <td>{{ a.condition_mode or "" }}</td>
+      <td>{{ a.sources_count }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h2>Сырые данные по источникам</h2>
+<table>
+  <tr><th>Источник</th><th>Дата</th><th>Темп</th><th>Описание</th><th>Создано</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ r.source }}</td>
+    <td>{{ r.date }}</td>
+    <td>{{ r.temp_c if r.temp_c is not none else "" }}</td>
+    <td>{{ r.condition or "" }}</td>
+    <td>{{ r.created_at }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
